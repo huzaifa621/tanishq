@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <style>
-
-        body{
-            font-family: "Playfair Display",sans-serif;
+        body {
+            font-family: "Playfair Display", sans-serif;
         }
 
-        #centimg > img{
+        #centimg>img {
             width: 100%;
             height: 100%;
         }
@@ -81,7 +81,7 @@
             text-align: center;
         }
 
-        ul{
+        ul {
             margin-block-start: 1em;
             margin-block-end: 1em;
             margin-inline-start: 0px;
@@ -89,13 +89,13 @@
             padding-inline-start: 40px;
         }
 
-        .text-center{
+        .text-center {
             text-transform: none;
             text-align: center;
         }
 
-        h1{
-            font: 25px "Playfair Display",sans-serif;
+        h1 {
+            font: 25px "Playfair Display", sans-serif;
             margin-top: 0;
             font-weight: 400;
             margin-top: 20px;
@@ -120,7 +120,7 @@
             height: auto;
         } */
 
-        video{
+        video {
             vertical-align: baseline;
             object-fit: contain;
         }
@@ -129,7 +129,7 @@
             display: block !important;
         }
 
-        video .player{
+        video .player {
             background-color: #000;
         }
 
@@ -139,141 +139,174 @@
             margin-right: 40px;
         }
 
-        .tile > img{
+        .tile>img {
             height: 360px;
         }
 
-        .newForYouBox{
+        .newForYouBox {
             display: flex;
-            justify-content:center;
+            justify-content: center;
             margin-right: auto;
             margin-left: auto;
             padding-left: 13px;
             padding-right: 13px;
         }
 
-        .col-xs-4{
+        .col-xs-4 {
             float: left;
             width: 33.33333333%;
         }
 
-        .col-xs-4, .col-md-4{
+        .col-xs-4,
+        .col-md-4 {
             position: relative;
             min-height: 1px;
         }
 
-        .shopByGenBox{
+        .shopByGenBox {
             display: flex;
         }
 
-        .img-responsive{
+        .img-responsive {
             display: block;
             max-width: 100%;
             height: auto;
         }
 
-        .afterGenderBox{
+        .afterGenderBox {
             margin-right: auto;
             margin-left: auto;
             display: flex;
-            justify-content:space-between;
+            justify-content: space-between;
         }
 
         .col-md-8 {
             width: 66.66666667%;
         }
-       
-        .fourBox{
-            display:grid;
+
+        .fourBox {
+            display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-gap: 10px;
         }
 
-        .caraousel-contain{
+        .caraousel-contain {
             margin-top: 50px;
             scroll-snap-type: x mandatory;
         }
 
-        .slides{
+        .slides {
             width: 80%;
             margin: auto;
             display: flex;
             scroll-snap-align: start;
         }
 
-        .slides > div > img{
+        .slides>div>img {
             height: 70%;
             width: 85%;
         }
-
     </style>
-   
+
 </head>
+
 <body>
-    
+
     <div>
         <div>
-            <button id="prevbtn" type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Prev" role="button" >Prev</button>
+            <button id="prevbtn" type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Prev"
+                role="button">Prev</button>
         </div>
-        <div >
-            <button id="nextbtn" type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" >Next</button>
+        <div>
+            <button id="nextbtn" type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next"
+                role="button">Next</button>
         </div>
-        <div id="centimg" >
-            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/d6379427-7678-436e-b7f3-970ed4df10dc/desktop/Polki_2500x950.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-d6379427-7678-436e-b7f3-970ed4df10dc-desktop-n-mifU0&impolicy=pqlow" alt="">
-            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/71fa635c-f3ab-49f1-a2f1-f78aa198806d/desktop/2500X950-copy-min.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-71fa635c-f3ab-49f1-a2f1-f78aa198806d-desktop-nZOB3Nn&impolicy=pqlow" alt="">
-            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/08781856-edc2-48d9-9088-5a02ea48e029/desktop/Tanishq_Spring_Banner_2500x950-min.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-08781856-edc2-48d9-9088-5a02ea48e029-desktop-n-RkeOa&impolicy=pqlow" alt="">
+        <div id="centimg">
+            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/d6379427-7678-436e-b7f3-970ed4df10dc/desktop/Polki_2500x950.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-d6379427-7678-436e-b7f3-970ed4df10dc-desktop-n-mifU0&impolicy=pqlow"
+                alt="">
+            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/71fa635c-f3ab-49f1-a2f1-f78aa198806d/desktop/2500X950-copy-min.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-71fa635c-f3ab-49f1-a2f1-f78aa198806d-desktop-nZOB3Nn&impolicy=pqlow"
+                alt="">
+            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/08781856-edc2-48d9-9088-5a02ea48e029/desktop/Tanishq_Spring_Banner_2500x950-min.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-08781856-edc2-48d9-9088-5a02ea48e029-desktop-n-RkeOa&impolicy=pqlow"
+                alt="">
         </div>
         <div>
             <ul class="slick-dots" role="tablist">
-                <li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation10" id="slick-slide10">
+                <li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation10"
+                    id="slick-slide10">
                     <button type="button" data-role="none" role="button" tabindex="0">1</button>
                 </li>
-                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation11" id="slick-slide11" class="">
+                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation11"
+                    id="slick-slide11" class="">
                     <button type="button" data-role="none" role="button" tabindex="0">2</button>
                 </li>
-                <li aria-hidden="false" role="presentation" aria-selected="false" aria-controls="navigation12" id="slick-slide12" class="slick-active">
+                <li aria-hidden="false" role="presentation" aria-selected="false" aria-controls="navigation12"
+                    id="slick-slide12" class="slick-active">
                     <button type="button" data-role="none" role="button" tabindex="0">3</button>
                 </li>
             </ul>
         </div>
         <div>
-            <h1 class="text-center" >Shop By Category</h1>
+            <h1 class="text-center">Shop By Category</h1>
             <div class="col-xs-4">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteGoldCoin240x240px.png" alt="">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteGoldCoin240x240px.png"
+                    alt="">
             </div>
             <div class="col-xs-4">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteEARRINGS240x240px.png" alt="">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteEARRINGS240x240px.png"
+                    alt="">
             </div>
             <div class="col-xs-4">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhitePENDANTS240x240px.png" alt="">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhitePENDANTS240x240px.png"
+                    alt="">
             </div>
             <div class="col-xs-4">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteFingerRings240x240px.png" alt="">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteFingerRings240x240px.png"
+                    alt="">
             </div>
             <div class="col-xs-4">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteMangalsutra240x240px.png" alt="">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteMangalsutra240x240px.png"
+                    alt="">
             </div>
             <div class="col-xs-4">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteNecklace240x240px.png" alt="">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteNecklace240x240px.png"
+                    alt="">
             </div>
             <div class="col-xs-4">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteNeckwearSet240x240px.png" alt="">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteNeckwearSet240x240px.png"
+                    alt="">
             </div>
             <div class="col-xs-4">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteChain240x240px.png" alt="">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteChain240x240px.png"
+                    alt="">
             </div>
             <div class="col-xs-4">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteBangles240x240px.png" alt="">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteBangles240x240px.png"
+                    alt="">
             </div>
             <div class="col-xs-4">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteBracelets240x240px.png" alt="">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhiteBracelets240x240px.png"
+                    alt="">
             </div>
             <div class="col-xs-4">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhitenosepin240x240px.jpg" alt="">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhitenosepin240x240px.jpg"
+                    alt="">
             </div>
             <div class="col-xs-4">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhitependantset240x240px.jpg" alt="">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/categoriesCircle/CategoryWhitependantset240x240px.jpg"
+                    alt="">
             </div>
         </div>
         <div class="video-wrapper">
@@ -282,71 +315,96 @@
                 <!-- <video id="video_player" class="player hidden-xs hidden-sm" style="width:100%;height:100%" controlslist="nodownload" preload="metadata" loop="" autoplay="" muted="" playsinline="">
                     <source src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/ad757134-c1e8-45e8-b089-be50a7f2a8ce/Sangeet-792-no-button.mp4?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-ad757134-c1e8-45e8-b089-be50a7f2a8ce-n-RpXb7" type="video/mp4">
                 </video> -->
-                <video  class="player visible-xs visible-sm" style="width:100%;height:50%" controlslist="nodownload" preload="metadata" loop="" autoplay="" muted="" playsinline="">
+                <!-- <video  class="player visible-xs visible-sm" style="width:100%;height:50%" controlslist="nodownload" preload="metadata" loop="" autoplay="" muted="" playsinline="">
                     <source src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/ad757134-c1e8-45e8-b089-be50a7f2a8ce/Sangeet-792-no-button.mp4?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-ad757134-c1e8-45e8-b089-be50a7f2a8ce-n-RpXb7" type="video/mp4">
+                </video> -->
+                <video  style="object-fit: cover; width:100%; height:800px" controlslist="nodownload"
+                    preload="metadata" loop="" autoplay="" muted="">
+                    <source
+                        src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/ad757134-c1e8-45e8-b089-be50a7f2a8ce/Sangeet-792-no-button.mp4?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-ad757134-c1e8-45e8-b089-be50a7f2a8ce-n-RpXb7"
+                        type="video/mp4">
                 </video>
-            </div>   
+            </div>
         </div>
-        
+
         <div>
-            <h1 class="text-center" >New For You!</h1>
-            <div class="newForYouBox" >
+            <h1 class="text-center">New For You!</h1>
+            <div class="newForYouBox">
                 <div class="tile">
-                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/Regional/Engagementringsforhim_480x480px.jpg" alt="">
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/Regional/Engagementringsforhim_480x480px.jpg"
+                        alt="">
                 </div>
                 <div class="tile">
-                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/Regional/Engagementrings_PinkBG_480x480px.jpg" alt="">
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/Regional/Engagementrings_PinkBG_480x480px.jpg"
+                        alt="">
                 </div>
                 <div class="tile">
-                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/Regional/EngagementBestsellerRings_480x480px.jpg" alt="">
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/Regional/EngagementBestsellerRings_480x480px.jpg"
+                        alt="">
                 </div>
             </div>
         </div>
 
         <div>
-            <h1 class="text-center" >Shop By Gender</h1>
-            <div class="shopByGenBox" >
+            <h1 class="text-center">Shop By Gender</h1>
+            <div class="shopByGenBox">
                 <div class="col-md-4 col-xs-4">
                     <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/gender/men.jpg" class="img-responsive">
-                    <h3 class="text-center" style="margin:10px auto 20px; color:#000;  letter-spacing:1px; font-size:14px;">MEN</h3>
+                    <h3 class="text-center"
+                        style="margin:10px auto 20px; color:#000;  letter-spacing:1px; font-size:14px;">MEN</h3>
                 </div>
                 <div class="col-md-4 col-xs-4">
-                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/gender/women.jpg" class="img-responsive">
-                    <h3 class="text-center" style="margin:10px auto  20px; color:#000; letter-spacing:1px; font-size:14px;">WOMEN</h3>
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/gender/women.jpg"
+                        class="img-responsive">
+                    <h3 class="text-center"
+                        style="margin:10px auto  20px; color:#000; letter-spacing:1px; font-size:14px;">WOMEN</h3>
                 </div>
                 <div class="col-md-4 col-xs-4">
-                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/gender/kids.jpg" class="img-responsive">
-                    <h3 class="text-center" style="margin:10px auto 20px; color:#000;  letter-spacing:1px; font-size:14px;">KIDS</h3>
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/gender/kids.jpg"
+                        class="img-responsive">
+                    <h3 class="text-center"
+                        style="margin:10px auto 20px; color:#000;  letter-spacing:1px; font-size:14px;">KIDS</h3>
                 </div>
             </div>
         </div>
 
-        <div class="afterGenderBox" >
+        <div class="afterGenderBox">
             <div class="col-xs-12 col-md-8">
-                <img class="img-responsive" src="https://staticimg.titan.co.in/Tanishq/Banners/home/CategorySpotlight/Artboard5.png" style="width:100%;margin-bottom: 5px;">
+                <img class="img-responsive"
+                    src="https://staticimg.titan.co.in/Tanishq/Banners/home/CategorySpotlight/Artboard5.png"
+                    style="width:100%;margin-bottom: 5px;">
             </div>
-            <div class="fourBox" >
-                <div >
-                    <img class="img-responsive left-margin" src="https://staticimg.titan.co.in/Tanishq/Banners/home/CategorySpotlight/Artboard1.png" style="width:100%;">
+            <div class="fourBox">
+                <div>
+                    <img class="img-responsive left-margin"
+                        src="https://staticimg.titan.co.in/Tanishq/Banners/home/CategorySpotlight/Artboard1.png"
+                        style="width:100%;">
                 </div>
-                <div >
-                    <img class="img-responsive right-margin" src="https://staticimg.titan.co.in/Tanishq/Banners/home/CategorySpotlight/Artboard2.png" style="width:100%;">
+                <div>
+                    <img class="img-responsive right-margin"
+                        src="https://staticimg.titan.co.in/Tanishq/Banners/home/CategorySpotlight/Artboard2.png"
+                        style="width:100%;">
                 </div>
-                <div >
-                    <img class="img-responsive left-margin" src="https://staticimg.titan.co.in/Tanishq/Banners/home/CategorySpotlight/Artboard3.png" style="width:100%;">
+                <div>
+                    <img class="img-responsive left-margin"
+                        src="https://staticimg.titan.co.in/Tanishq/Banners/home/CategorySpotlight/Artboard3.png"
+                        style="width:100%;">
                 </div>
-                <div >
-                    <img class="img-responsive right-margin" src="https://staticimg.titan.co.in/Tanishq/Banners/home/CategorySpotlight/Artboard4.png" style="width:100%;">
+                <div>
+                    <img class="img-responsive right-margin"
+                        src="https://staticimg.titan.co.in/Tanishq/Banners/home/CategorySpotlight/Artboard4.png"
+                        style="width:100%;">
                 </div>
             </div>
-        </div>    
+        </div>
 
         <div>
             <h1 class="text-center">Top Sellers</h1>
-            <div class="caraousel-contain" >
+            <div class="caraousel-contain">
                 <div class="slides">
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/512214SKQAAA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/512214SKQAAA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Delicate Gold Stud Earrings</h3>
                             <span class="tt_rupee">
@@ -358,7 +416,8 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/513515PBHAAA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/513515PBHAAA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Captivating 22 Karat Yellow Gold Floral Paisley Pendant</h3>
                             <span class="tt_rupee">
@@ -370,7 +429,8 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/510433SNAAGA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/510433SNAAGA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Simple 22 Karat Yellow Gold Floral Stud Earrings</h3>
                             <span class="tt_rupee">
@@ -382,7 +442,8 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/502218HDSAAA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/502218HDSAAA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Sublime Gold Hoop Earrings</h3>
                             <span class="tt_rupee">
@@ -396,7 +457,8 @@
                 </div>
                 <div class="slides">
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/503013HZHAAA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/503013HZHAAA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Dainty Beaded Gold Hoop Earrings</h3>
                             <span class="tt_rupee">
@@ -408,7 +470,8 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/501107PMEAAA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/501107PMEAAA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Distinctive Yellow Gold Rounded Swastika Pendant</h3>
                             <span class="tt_rupee">
@@ -420,11 +483,13 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51T815FKD1A00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51T815FKD1A00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Minimalist 22 Karat Yellow Gold Finger Ring</h3>
                             <span class="tt_rupee">
-                                <h4 style="margin-top: 10px;">₹ 10033 <span data-type="listprice" class="tt_strike">₹ 9955</span></h4>
+                                <h4 style="margin-top: 10px;">₹ 10033 <span data-type="listprice" class="tt_strike">₹
+                                        9955</span></h4>
                             </span>
                             <!-- <span class="tt_dollor">
                                 <h4 style="margin-top: 10px;">$ 129.53 <span data-type="listprice" class="tt_strike">$ 128.52</span></h4>
@@ -432,7 +497,8 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/510433SEAAGA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/510433SEAAGA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Romantic Heart Pattern Stud Earrings</h3>
                             <span class="tt_rupee">
@@ -446,11 +512,13 @@
                 </div>
                 <div class="slides">
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51T340FAMAA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51T340FAMAA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Beguilling 22 Karat Gold Artsy Ring</h3>
                             <span class="tt_rupee">
-                                <h4 style="margin-top: 10px;">₹ 6352 <span data-type="listprice" class="tt_strike">₹ 6303</span></h4>
+                                <h4 style="margin-top: 10px;">₹ 6352 <span data-type="listprice" class="tt_strike">₹
+                                        6303</span></h4>
                             </span>
                             <!-- <span class="tt_dollor">
                                 <h4 style="margin-top: 10px;">$ 82.01 <span data-type="listprice" class="tt_strike">$ 81.38</span></h4>
@@ -458,11 +526,13 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/511072CSGAA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/511072CSGAA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Simple Gold Chain for Kids</h3>
                             <span class="tt_rupee">
-                                <h4 style="margin-top: 10px;">₹ 17026 <span data-type="listprice" class="tt_strike">₹ 16783</span></h4>
+                                <h4 style="margin-top: 10px;">₹ 17026 <span data-type="listprice" class="tt_strike">₹
+                                        16783</span></h4>
                             </span>
                             <!-- <span class="tt_dollor">
                                 <h4 style="margin-top: 10px;">$ 219.82 <span data-type="listprice" class="tt_strike">$ 216.68</span></h4>
@@ -470,11 +540,13 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/512311PPBAAA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/512311PPBAAA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Contemporary Floral Gold Pendant</h3>
                             <span class="tt_rupee">
-                                <h4 style="margin-top: 10px;">₹ 6392 <span data-type="listprice" class="tt_strike">₹ 6301</span></h4>
+                                <h4 style="margin-top: 10px;">₹ 6392 <span data-type="listprice" class="tt_strike">₹
+                                        6301</span></h4>
                             </span>
                             <!-- <span class="tt_dollor">
                                 <h4 style="margin-top: 10px;">$ 82.52 <span data-type="listprice" class="tt_strike">$ 81.35</span></h4>
@@ -482,7 +554,8 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/511418DTEAFA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/511418DTEAFA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Luminous Chand Bali Gold Drop Earrings</h3>
                             <span class="tt_rupee">
@@ -496,7 +569,8 @@
                 </div>
                 <div class="slides">
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/510784FKAAA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/510784FKAAA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Whimsical Wave Pattern Gold Ring</h3>
                             <span class="tt_rupee">
@@ -508,7 +582,8 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/511920FCMAA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/511920FCMAA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Glorious 22 Karat Yellow Gold Floral Ring</h3>
                             <span class="tt_rupee">
@@ -520,7 +595,8 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/511300DELAFA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/511300DELAFA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Fancy Teardrop Pattern Gold Drop Earrings</h3>
                             <span class="tt_rupee">
@@ -532,7 +608,8 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/511036FJBAA00_1.jpg?impolicy=pqlow" alt="">
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/511036FJBAA00_1.jpg?impolicy=pqlow"
+                            alt="">
                         <div class="tt_txt_btm">
                             <h3>Auspicious 22 Karat Yellow Gold Om Finger Ring</h3>
                             <span class="tt_rupee">
@@ -549,41 +626,52 @@
 
         <div class="col-xs-12 col-md-12 ">
             <!--div class="col-xs-12 col-md-offset-1 col-md-5"><img alt="" class="img-responsive" src="/wps/wcm/connect/tanishq/5a989616-fac1-4516-9717-66352a0d445e/flip2.jpg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_2Q4I11C0OOP270QIIRGE7T3OU6-5a989616-fac1-4516-9717-66352a0d445e-mLmo2uv" title=""></div-->
-        
+
             <div class="col-xs-12 col-md-offset-6 col-md-5 cust-formRBS ">
-        
-              <div class="col-sm-12 content-detail">
-                <img src="https://staticimg.titan.co.in/Tanishq/rivaahLogo-1.png" style="margin:0 auto;display: flex;width: 50%;margin-bottom: 10px;">
-                <!--h1 class="blog-post-head animated heading fadeInUp delay" style="display: block; text-align:center; margin-top:2%; ">Rivaah Brides</h1-->
-        
-                <p class="animated" style="font-size:12px;text-align:center;font-family: 'Roboto';word-spacing:2px;letter-spacing:0.5px; text-transform:uppercase;">A jewel for every tradition</p>
-        
-                <p class="truncate-text" style="font-family: 'Playfair Display'; font-size: 16px;line-height: 30px; text-align:center;">Stunning Wedding Jewellery crafted to celebrate the glory of every Indian bride. Please share your details with us and our jewellery expert will be in touch soon </p>
-        
-              </div>
-        
-        
-              <div>
-        
-        
-                <div class="col-sm-6 col-xs-12" style=" margin-bottom: 6%;">
-        
-                  <button class="btn btn-default col-xs-12 col-md-offset-1 col-md-5" data-target="#submitform" data-toggle="modal" style="border: 1px solid black; background:#000; width:100%">ARRANGE A CALLBACK</button>
+
+                <div class="col-sm-12 content-detail">
+                    <img src="https://staticimg.titan.co.in/Tanishq/rivaahLogo-1.png"
+                        style="margin:0 auto;display: flex;width: 50%;margin-bottom: 10px;">
+                    <!--h1 class="blog-post-head animated heading fadeInUp delay" style="display: block; text-align:center; margin-top:2%; ">Rivaah Brides</h1-->
+
+                    <p class="animated"
+                        style="font-size:12px;text-align:center;font-family: 'Roboto';word-spacing:2px;letter-spacing:0.5px; text-transform:uppercase;">
+                        A jewel for every tradition</p>
+
+                    <p class="truncate-text"
+                        style="font-family: 'Playfair Display'; font-size: 16px;line-height: 30px; text-align:center;">
+                        Stunning Wedding Jewellery crafted to celebrate the glory of every Indian bride. Please share
+                        your details with us and our jewellery expert will be in touch soon </p>
+
                 </div>
-                <div class="col-sm-6 col-xs-12">
-        
-                  <a href="/rivaah" target="_blank"><button class="btn btn-default col-xs-12 col-md-6" style="background: none;border: 1px solid black;color: black;width:100%;">EXPLORE MORE</button></a>
-        
-        
+
+
+                <div>
+
+
+                    <div class="col-sm-6 col-xs-12" style=" margin-bottom: 6%;">
+
+                        <button class="btn btn-default col-xs-12 col-md-offset-1 col-md-5" data-target="#submitform"
+                            data-toggle="modal" style="border: 1px solid black; background:#000; width:100%">ARRANGE A
+                            CALLBACK</button>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+
+                        <a href="/rivaah" target="_blank"><button class="btn btn-default col-xs-12 col-md-6"
+                                style="background: none;border: 1px solid black;color: black;width:100%;">EXPLORE
+                                MORE</button></a>
+
+
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
 
     </div>
 
 
 </body>
+
 </html>
 
 <script>
