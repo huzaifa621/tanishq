@@ -1,0 +1,306 @@
+body {
+    font-family: "Playfair Display", sans-serif;
+}
+
+.firstImg{
+    margin-bottom: 70px;
+}
+
+#centimg > img {
+    width: 100%;
+    height: 100%;
+}
+
+.shopByCateg{
+    margin-bottom: 80px;
+}
+
+.slick-next {
+    right: 10px;
+    background: url(https://staticimg.titan.co.in/Icons/carousel/right.svg) no-repeat;
+    background-position: 100% center;
+    -webkit-background-size: 10px 19px;
+    -moz-background-size: 10px 19px;
+    -o-background-size: 10px 19px;
+    background-size: 10px 19px;
+
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    display: block;
+    width: 10px;
+    top: 40%;
+    height: 19px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: 4;
+}
+
+.slick-prev {
+    left: 10px;
+    background: url(https://staticimg.titan.co.in/Icons/carousel/left.svg) no-repeat;
+    background-position: 100% center;
+    -webkit-background-size: 10px 19px;
+    -moz-background-size: 10px 19px;
+    -o-background-size: 10px 19px;
+    background-size: 10px 19px;
+
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    display: block;
+    width: 10px;
+    top: 40%;
+    height: 19px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: 4;
+}
+
+.slick-dots {
+    position: relative;
+    display: inline-block;
+    outline: 0;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 15;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.text-center {
+    text-transform: none;
+    text-align: center;
+}
+
+.h1 {
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tile {
+    width: 340px;
+    margin-right: 40px;
+}
+
+.tile > img {
+    height: 360px;
+}
+
+
+.videoBox{
+    margin-bottom: 40px;
+}
+
+.newForYouBox {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-bottom: 40px;
+}
+
+.col-xs-4 {
+    float: left;
+    width: 33.33333333%;
+}
+
+.col-xs-4,
+.col-md-4 {
+    position: relative;
+    min-height: 1px;
+}
+
+.shopByGenBox {
+    display: flex;
+}
+
+.shopByGenBox > div:first-child{
+    margin-right: 25px;
+}
+
+.shopByGenBox > div:nth-child(2){
+    margin-right: 25px;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.afterGenderBox {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.genone{
+    width: 66.6666667%;
+}
+
+.col-md-8 {
+    width: 66.66666667%;
+}
+
+.fourBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.caraousel-contain {
+    margin-top: 50px;
+    scroll-snap-type: x mandatory;
+}
+
+.slides {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    scroll-snap-align: start;
+}
+
+.slides > div > img {
+    height: 70%;
+    width: 85%;
+}
+
+.categpart1 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.categpart2{
+    display: flex;
+    justify-content:center;
+    width: 80%;
+    margin: auto;
+}
+
+.topSellersElem{
+    text-align: center;
+}
+
+/* .topSellersElem > h3{
+    overflow-x: hidden;
+} */
+
+.connectWithUs{
+    margin: 20px 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.connectBox{
+    margin-right: 20px;
+}
+
+.col-md-8, .col-xs-12, .col-md-12{
+    position: relative;
+    min-height: 1px;
+}
+
+.col-xs-12 {
+    float: left;
+    width: 100%;
+}
+
+
+.blog-detail{
+    margin-top: 3%;
+}
+
+.rivaahImg{
+    background-image: url('https://staticimg.titan.co.in/Tanishq/Banners/rivaah/images/banner/Tamil/RivaahNewDestop_1920x700.jpg');
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content-detail{
+    height: 300px;
+    width: 33%;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+}
+
+.content-detail > img{
+    margin:0 auto;
+    display: flex;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.animated{
+    font-size:12px;
+    text-align:center;
+    font-family: 'Roboto';
+    word-spacing:2px;
+    letter-spacing:0.5px; 
+    text-transform:uppercase;
+}
+
+.truncate-text{
+    font-family: 'Playfair Display'; 
+    font-size: 16px;
+    line-height: 30px; 
+    text-align:center;
+}
+
+.btnFlex{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.btnFlex > div:first-child > button {
+    padding: 15px;
+    color:white;
+}
+
+.btnFlex > div:last-child > a > button {
+    padding: 15px;
+}
+
+.arrangeCallBtn{
+    border: 1px solid black; 
+    background:#000; 
+    width:100%;
+}
+
+.rivaahBtn{
+    background: none;
+    border: 1px solid black;
+    color: black;
+    width:100%;
+}
