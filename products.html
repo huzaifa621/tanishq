@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img\tanishq_logo_browser_top.png">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles\products.css">
+    <link rel="stylesheet" href="styles\footer.css">
+    <link rel="stylesheet" href="styles\navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://kit.fontawesome.com/78d13b8fa3.js" crossorigin="anonymous"></script>
+    <style>
+        #discountSort,#priceSort,#price,#type,#occasion,#purity {
+            cursor: pointer;
+        }
+        .helper-div {
+            margin-top: 137px;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar div -->
+    <div style="font-family: sans-serif;" id="navbar"></div>
+
+
+    <!-- products div -->
+    <div class="helper-div">
+        <div>
+            <h4>STORE LOCATOR</h4>
+        </div>
+        <div>
+            <h4>BOOK AN APPOINTMENT</h4>
+        </div>
+        <div>
+            <h4>LIVE VIDEO CALL</h4>
+        </div>
+    </div>
+
+    <div class="product-container-div">
+        <p class="location-status-para">HOME ></p>
+
+        <div class="total-products-shown-div">
+            <div>
+                <span>| 359 DESIGNS</span>
+            </div>
+            <div>
+                <p>Sort By</p>
+                <div>
+                    <span>BEST SELLERS |</span>
+                    <span> NEW ARRIVALS |</span>
+                    <span>POPULARITY |</span>
+                    <span id="discountSort"> DISCOUNT  |</span>
+                    <span id="priceSort"> PRICE </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="filter-and-products-container-div">
+            <!-- filter options -->
+            <div class="filter-container-div">
+                <!-- compare box -->
+                <div class="compare-box">
+                    <div>COMPARE</div>
+                </div>
+
+                <div class="filter-tag">
+                    <div style="font-size: 20px;">Filter By</div>
+                    <div><u>CLEAR ALL</u></div>
+                </div>
+                <hr>
+                
+                <div id="price">PRICE</div>
+                <div></div>
+                <hr>
+
+                <div id="type">TYPE</div>
+                <div></div>
+                <hr>
+
+                <div id="occasion">OCCASION</div>
+                <div></div>
+                <hr>
+
+                <div id="purity">PURITY</div>
+                <div></div>
+                <hr>
+
+                <div id="metal">METAL</div>
+                <hr>
+
+                <div id="metalColor">METAL COLOR</div>
+                <hr>
+
+                <div id="earingHeight">EARING HEIGHT</div>
+                <hr>
+
+                <div id="earingWidth">EARING WIDTH</div>
+                <hr>
+
+                <div id="community">COMMUNITY</div>
+                <hr>
+
+                <div id="form">FORM</div>
+                <hr>
+
+                <div id="virtualTryone">VIRTUAL TRYON</div>
+                <hr>
+            </div>
+            
+            <div id="productsContainer" style="flex: 3.2; margin-bottom: 50px;"></div>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center;background-color: black; height: 50px; width: 200px; margin: auto; margin-bottom: 30px;">
+            <div><a style="color: white; text-decoration: none" href="products.html">SEE MORE PRODUCTS</a></div>
+        </div>
+
+        <div>
+            <p style="font-size: 18px;">Popular Earrings</p>
+            <hr style="border: 1px solid gray;">
+            <p style="font-size: 18px"><a style="color: black; text-decoration: none;" href="products.html">7 Stone Earrings | Bali Earrings | Chand Bali Earrings | Chandbali Earrings | Cluster Earrings |
+                    Color Stone Earrings | Dangle Earrings | Diamond Earrings | Eternity Earrings | Fancy Earrings | Floral Earrings | Gemstone Earrings | 
+                    Geometric Earrings | Gold Earrings | Hoop Earrings | Huggies Earrings | Jali Earrings | Jhumka Earrings | Leaf Earrings | Long drop Earrings
+                    | Mia Earrings | Motif Earrings | Navratna Earrings | Paisley Earrings | Pearl Earrings | Pendant Earrings Set | Platinum Earrings
+                    | Rajkot Bali Earrings | Short Drop Earrings | Single Stone Earrings | Stud Earrings | Stud with Hanging Earrings | Sui Dhaga Earrings | 
+                    Traditional Stud Earrings | All Earrings</a>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- footer div -->
+    <div id="footer"></div>
+</body>
+</html>
+
+<script type="module">
+    import {navbar} from './components/navbar.js';
+    let N = document.getElementById("navbar");
+    N.innerHTML = navbar();
+
+    search.addEventListener('click', () => {
+        window.location.href = "products.html";
+    })
+
+    import {footer} from './components/footer.js';
+    let F = document.getElementById("footer");
+    F.innerHTML = footer();
+
+    let flag = localStorage.getItem("flag_val");
+    if(flag=="true") {
+        let user_l = document.getElementById("user_l");
+        user_l.innerText = "HI " + JSON.parse(localStorage.getItem("userDataBase"))[0].F_name +"!(LOGOUT)" ;
+        console.log(JSON.parse(localStorage.getItem("userDataBase"))[0].F_name);
+    }
+</script>
+
+<script src="scripts\database.js"></script>
+
+<script src="scripts\filterScripts\price.js"></script>
+
+<script src="scripts\filterScripts\type.js"></script>
+
+<script src="scripts\filterScripts\occassion.js"></script>
+
+<script src="scripts\filterScripts\purity.js"></script>
+
+<script src="scripts\appendData.js"></script>
+
+<script>
+    let data = JSON.parse(localStorage.getItem("database"));
+    appendData(data);
+
+    priceSort.addEventListener('click', () => {
+        // let data = JSON.parse(localStorage.getItem("database"));
+
+        data.sort( function(a,b) {
+            return a.Price-b.Price;
+        })
+        
+        appendData(data);
+    })
+
+    priceSort.addEventListener('dblclick', () => {
+        // let data = JSON.parse(localStorage.getItem("database"));
+
+        data.sort( function(a,b) {
+            return b.Price-a.Price;
+        })
+        
+        appendData(data);
+    })
+
+    discountSort.addEventListener('click', () => {
+        // let data = JSON.parse(localStorage.getItem("database"));
+
+        data.sort( function(a,b) {
+            return a.DiscountPrice-b.DiscountPrice;
+        })
+        
+        appendData(data);
+    })
+</script>

@@ -1,0 +1,100 @@
+*{
+    font-family: sans-serif;
+}
+#checkoutNavbar{
+    border-bottom: 0.5px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+}
+#checkoutNavbar>img{
+    width: 107px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.bold{
+    font-weight: bold;
+}
+.step{
+    border-bottom: 0.5px solid lightgrey;
+    padding: 30px 0px 30px 180px;
+    font-weight: bold;
+
+}
+#details{
+    padding-left: 16%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid lightgray;
+    
+}
+#details>input{
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+}
+#btnPayment{
+    width: 275px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    border: none;
+}
+#select,#country{
+    height: 50px;
+    font-size: 18px;
+}
+#payment{
+    padding-left: 16%;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    display: none;
+    
+}
+.shortP{
+    width: 400px;
+    font-size: 18px;
+}
+.shortP~p{
+    margin-top: 40px;
+}
+#creditcard{
+    border: 1px solid green;
+    padding: 30px;
+    padding-left: 70px;
+}
+#total{
+    padding: 60px;
+    padding-left: 180px;
+}
+#total>div{
+    border-bottom:  1px solid lightgray;
+    padding: 50px;
+    padding-bottom: 10px;
+    
+}
+#creditImg{
+    margin-top: 30px;
+}
+#creditImg>img{
+    width: 55px;
+    height: 33px;
+}
+#btnPay{
+    width: 275px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    margin-left: 70px;
+    border: none;
+}
+#btnPay~p{
+    width: 500px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img\tanishq_logo_browser_top.png">
+    <title>Payment page</title>
+    <link rel="stylesheet" href="styles\payment.css">
+</head>
+<body>
+    <div id="navbar">
+        <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/0465d640-7ee4-4354-a509-b14c6dc05cd8/TanishqTLogo.png?MOD=AJPERES" alt="">
+        <p>TANISHQ</p>
+    </div>
+    
+    <div id="one">
+
+        <div id="oneA">
+            <h3>Select a payment method</h3>
+            <div>
+                <h4>Credit/Debit Card</h4>
+                <p>Visa, Mastercard, Maestro, Rupay</p>
+            </div>
+            <div>
+                <h4>Netbanking</h4>
+                <p>Pay with Internet Banking Account</p>
+            </div>
+            <div>
+                <h4>Wallet</h4>
+                <p>Pay using a Wallet</p>
+            </div>
+        </div>
+
+
+        <div id="oneB">
+            <h3>Pay with Credit/Debit Card</h3>
+            <p class="grey">Card Number</p>
+            <input type="number" placeholder="Enter Card Number" id="cardNo">
+
+            <p class="grey">Expiry Date</p>
+            <input type="text" placeholder="MM/YY" id="expiry">
+
+            <p class="grey">CVV</p>
+            <input type="password" placeholder="CVV" id="cvv">
+
+            <p class="grey">Cardholder's Name</p>
+            <input type="text" placeholder="Full Name">
+
+            <button id="btnPay" onclick="functionpay()">PAY NOW</button>
+
+            <p>Powered by</p>
+            <img src="https://cdn.razorpay.com/logo.svg" alt="">
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function functionpay(){
+        let cardNo = document.getElementById("cardNo").value;
+        let expiryDate = document.getElementById("expiry").value;
+        let cvv = document.getElementById("cvv").value;
+        let name = document.getElementById("cvv").value;
+
+        if (cardNo=="" || expiryDate=="" || cvv=="" || name=="")
+        {
+            alert("Please fill all details")
+        }
+        else if (cardNo.length != 16)
+        {
+            alert("Please enter valid Card details")
+        }
+
+        else {
+            alert("Payment done successfully")
+            window.location.href = "index.html";
+        }
+
+    
+
+    }
+</script>

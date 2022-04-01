@@ -1,0 +1,99 @@
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.main>div{
+    width: 35%;
+    height: 400px;
+    margin-left: 50px;
+}
+.main > div > img{
+    width: 100%;
+}
+img{
+    width: 30%;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+#container{
+    font-family: "Playfair Display",sans-serif;
+}
+fieldset{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    height: 270px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.small{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+}
+.small > div{
+    margin-right: 12px;
+    background-color: rgb(241, 235, 235);
+    padding: 10px;
+}
+input{
+    padding: 10px;
+    border: 0px;
+    background-color: rgb(241, 239, 235);
+}
+.flag{
+    width: 12%;
+    padding: 5px;
+}
+.otp_div{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Raleway",sans-serif;
+    padding: 15px;
+    text-align: center;
+    
+}
+.otp_div:hover{
+    cursor: pointer;
+}
+.white_bg{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.signup:hover{
+    cursor: pointer;
+}
+
+#pass{
+    width: 69%;
+    text-align: center;
+}
+
+#otp{
+    width: 69%;
+    text-align: center;
+    display: none;
+}
+#user{
+    width: 69%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+button{
+    width: 100%;
+    margin-top: 20px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-family: "Raleway",sans-serif;
+    font-weight: bold;
+}
