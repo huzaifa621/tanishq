@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"href=  "http://www.dividapps.com/img/ilq/images/q510.jpg">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles\cart.css">
+    <link rel="stylesheet" href="styles\footer.css">
+    <link rel="stylesheet" href="styles\navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://kit.fontawesome.com/78d13b8fa3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <p style="font-size: 12px; margin-top: 150px; padding-left: 7%; color: gray;">HOME > CART</p>
+
+    <div id="container1">
+        <h1 class="word">CART : 1 ITEM</h1>
+            <br>
+        <div id="cart">
+            
+
+            <div>
+                
+                <div id="cartItemTitle">
+                    <p>ITEM(S)</p>
+                    <p>QUANTITY</p>
+                    <p>TOTAL</p>
+                </div>
+
+                <div id="productContainer">
+
+                    <div id="showProduct">
+                    
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+
+            <div id="summary">
+                <h1>ORDER SUMMARY</h1>
+                <P>Enter Voucher Code</P>
+                <input type="text" id="inputVoucher">
+                <button id="btnVoucher">APPLY</button>
+
+                <p>Order Total</p> 
+                <h2 id="sumTotal"></h2>
+
+                <p>Shipping</p> 
+                <h2>FREE</h2>
+
+                <p>discount</p> 
+                <h2 id="sumDiscount">-201</h2>
+
+                <h3>You Pay</h3> 
+                <h2 id="SumPay"></h2>
+
+                <h3>Inclusive of all taxes*</h3>
+
+                <h3 id="red">You Save</h3>
+                 <h2 id="saving"></h2>
+
+                <button id="btnCheckout" onclick="checkout()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px;" id="footer"></div>
+    
+</body>
+</html>
+
+<script type="module">
+    import {navbar} from './components/navbar.js';
+    let N = document.getElementById("navbar");
+    N.innerHTML = navbar();
+
+
+    import {footer} from './components/footer.js';
+    let F = document.getElementById("footer");
+    F.innerHTML = footer();
+
+    let flag = localStorage.getItem("flag_val");
+    if(flag=="true") {
+        let user_l = document.getElementById("user_l");
+        user_l.innerText = "HI " + JSON.parse(localStorage.getItem("userDataBase"))[0].F_name +"!(LOGOUT)" ;
+        console.log(JSON.parse(localStorage.getItem("userDataBase"))[0].F_name);
+    }
+</script>
+
+<script>
+    // let database = [ {image: "https://staticimg.titan.co.in/Tanishq/Catalog/512016FYFAA00_1.jpg?pView=listing",
+    //  title: "Timeless 22 Karat Yellow Gold Finger Ring",
+    //  price: "30629", 
+    //  discountPrice: "30830",
+    //  weight: "Weight (g): 4.692",
+    //  size: "Ring Size : 17.20 mm"},
+
+    //  {image: "https://staticimg.titan.co.in/Tanishq/Catalog/512016FYFAA00_1.jpg?pView=listing",
+    //  title: "Timeless 22 Karat Yellow Gold Finger Ring",
+    //  price: "30629", 
+    //  discountPrice: "30830",
+    //  weight: "Weight (g): 4.692",
+    //  size: "Ring Size : 17.20 mm"} ];
+
+     let database = JSON.parse(localStorage.getItem("cart")) || [];
+
+     let word = document.querySelector(".word");
+     word.innerText = `CART : ${database.length} ITEMS`;
+
+     // Cart items start here
+
+     database.forEach(function(elem){
+        let div = document.createElement("div");
+
+        let image = document.createElement("img");
+        image.src = elem.Img;
+
+        let title = document.createElement("h3");
+        title.setAttribute("id","title")
+        title.innerText = elem.Title;
+        
+        let price = document.createElement("h3");
+        price.innerText = elem.Price;
+        price.setAttribute("id","price")
+
+        let discountPrice = document.createElement("h3");
+        discountPrice.setAttribute("id","discount")
+        discountPrice.innerText = elem.DiscountPrice;
+
+        let weight = document.createElement("p");
+        weight.innerText = elem.Weight;
+
+
+        let size = document.createElement("p");
+        size.innerText = "17.20";
+
+        let div2 = document.createElement("div")
+        div2.append(title,price,discountPrice,weight,size)
+
+        
+
+        let qty = document.createElement("input")
+        qty.setAttribute("id","qty")
+        qty.value =1;
+        qty.type = "number"
+        qty.addEventListener("click",qtyfunction)
+
+        let total = document.createElement("h3");
+        total.setAttribute("id","total")
+        total.innerText = elem.Price
+
+        
+
+        
+
+        div.append(image,div2,qty,total)
+
+        document.getElementById("showProduct").append(div)
+
+
+        function qtyfunction(){
+            let a = qty.value;
+            let b = price.innerText
+
+            total.innerText = "₹"+a*b;
+            
+            
+        }
+        
+        
+     })
+
+     //cart items ends here;
+
+     //summary starts here;
+
+     let sum = 0;
+     let Tsum =0;
+     database.forEach(function(elem){
+         let disprice = +elem.DiscountPrice
+         
+         sum += disprice;
+         document.getElementById("sumTotal").innerText = "₹"+sum;
+         
+         let totalPrice = +elem.Price;
+
+         Tsum += totalPrice;
+         document.getElementById("SumPay").innerText = "₹"+Tsum
+
+         let saving = sum - Tsum;
+         document.getElementById("saving").innerText = "₹"+saving;
+     })
+
+     
+     function checkout(){
+         window.location.href = "checkout.html"
+     }
+</script>

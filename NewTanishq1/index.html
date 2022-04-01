@@ -1,328 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <style>
-
-        body {
-            font-family: "Playfair Display", sans-serif;
-        }
-
-        .firstImg{
-            margin-bottom: 70px;
-        }
-
-        #centimg > img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .shopByCateg{
-            margin-bottom: 80px;
-        }
-
-        .slick-next {
-            right: 10px;
-            background: url(https://staticimg.titan.co.in/Icons/carousel/right.svg) no-repeat;
-            background-position: 100% center;
-            -webkit-background-size: 10px 19px;
-            -moz-background-size: 10px 19px;
-            -o-background-size: 10px 19px;
-            background-size: 10px 19px;
-
-            font-size: 0;
-            line-height: 0;
-            position: absolute;
-            display: block;
-            width: 10px;
-            top: 40%;
-            height: 19px;
-            padding: 0;
-            cursor: pointer;
-            color: transparent;
-            border: none;
-            outline: none;
-            z-index: 4;
-        }
-
-        .slick-prev {
-            left: 10px;
-            background: url(https://staticimg.titan.co.in/Icons/carousel/left.svg) no-repeat;
-            background-position: 100% center;
-            -webkit-background-size: 10px 19px;
-            -moz-background-size: 10px 19px;
-            -o-background-size: 10px 19px;
-            background-size: 10px 19px;
-
-            font-size: 0;
-            line-height: 0;
-            position: absolute;
-            display: block;
-            width: 10px;
-            top: 40%;
-            height: 19px;
-            padding: 0;
-            cursor: pointer;
-            color: transparent;
-            border: none;
-            outline: none;
-            z-index: 4;
-        }
-
-        .slick-dots {
-            position: relative;
-            display: inline-block;
-            outline: 0;
-            margin: 0 auto;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-
-            z-index: 15;
-            padding-left: 0;
-            list-style: none;
-            text-align: center;
-        }
-
-        .ul {
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            padding-inline-start: 40px;
-        }
-
-        .text-center {
-            text-transform: none;
-            text-align: center;
-        }
-
-        .h1 {
-            font-weight: 400;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        .tile {
-            width: 340px;
-            margin-right: 40px;
-        }
-
-        .tile > img {
-            height: 360px;
-        }
-
-
-        .videoBox{
-            margin-bottom: 40px;
-        }
-
-        .newForYouBox {
-            display: flex;
-            justify-content: center;
-            margin-right: auto;
-            margin-left: auto;
-            padding-left: 13px;
-            padding-right: 13px;
-            margin-bottom: 40px;
-        }
-
-        .col-xs-4 {
-            float: left;
-            width: 33.33333333%;
-        }
-
-        .col-xs-4,
-        .col-md-4 {
-            position: relative;
-            min-height: 1px;
-        }
-
-        .shopByGenBox {
-            display: flex;
-        }
-
-        .shopByGenBox > div:first-child{
-            margin-right: 25px;
-        }
-
-        .shopByGenBox > div:nth-child(2){
-            margin-right: 25px;
-        }
-
-        .img-responsive {
-            display: block;
-            max-width: 100%;
-            height: auto;
-        }
-
-        .afterGenderBox {
-            margin-right: auto;
-            margin-left: auto;
-            display: flex;
-            justify-content: space-between;
-        }
-
-
-        .genone{
-            width: 66.6666667%;
-        }
-
-        .col-md-8 {
-            width: 66.66666667%;
-        }
-
-        .fourBox {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-gap: 10px;
-        }
-
-        .caraousel-contain {
-            margin-top: 50px;
-            scroll-snap-type: x mandatory;
-        }
-
-        .slides {
-            width: 80%;
-            margin: auto;
-            display: flex;
-            scroll-snap-align: start;
-        }
-
-        .slides > div > img {
-            height: 70%;
-            width: 85%;
-        }
-
-        .categpart1 {
-            display: flex;
-            justify-content: center;
-            width: 80%;
-            margin: auto;
-        }
-
-        .categpart2{
-            display: flex;
-            justify-content:center;
-            width: 80%;
-            margin: auto;
-        }
-
-        .topSellersElem{
-            text-align: center;
-        }
-
-        /* .topSellersElem > h3{
-            overflow-x: hidden;
-        } */
-
-        .connectWithUs{
-            margin: 20px 10px 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .connectBox{
-            margin-right: 20px;
-        }
-
-        .col-md-8, .col-xs-12, .col-md-12{
-            position: relative;
-            min-height: 1px;
-        }
-
-        .col-xs-12 {
-            float: left;
-            width: 100%;
-        }
-
-
-        .blog-detail{
-            margin-top: 3%;
-        }
-
-        .rivaahImg{
-            background-image: url('https://staticimg.titan.co.in/Tanishq/Banners/rivaah/images/banner/Tamil/RivaahNewDestop_1920x700.jpg');
-            height: 550px;
-            width: 100%;
-            background-size: cover;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .content-detail{
-            height: 300px;
-            width: 33%;
-            position: absolute;
-            top: 10%;
-            left: 55%;
-        }
-
-        .content-detail > img{
-            margin:0 auto;
-            display: flex;
-            width: 50%;
-            margin-bottom: 10px;
-        }
-
-        .animated{
-            font-size:12px;
-            text-align:center;
-            font-family: 'Roboto';
-            word-spacing:2px;
-            letter-spacing:0.5px; 
-            text-transform:uppercase;
-        }
-
-        .truncate-text{
-            font-family: 'Playfair Display'; 
-            font-size: 16px;
-            line-height: 30px; 
-            text-align:center;
-        }
-
-        .btnFlex{
-            display: flex;
-            justify-content: space-around;
-        }
-
-
-        .btnFlex > div:first-child > button {
-            padding: 15px;
-            color:white;
-        }
-
-        .btnFlex > div:last-child > a > button {
-            padding: 15px;
-        }
-
-        .arrangeCallBtn{
-            border: 1px solid black; 
-            background:#000; 
-            width:100%;
-        }
-
-        .rivaahBtn{
-            background: none;
-            border: 1px solid black;
-            color: black;
-            width:100%;
-        }
-
-    </style>
-
+    <title>Profile_page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://kit.fontawesome.com/78d13b8fa3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
 </head>
-
 <body>
 
+
+    <!-- gajraj begins here -->
+    <div id="navigation_bar">
+
+    </div>
+    <!-- gajraj part ends here -->
+
+
+
+    
+
+    <!-- <-----------------------Bushra part begin-----------------------------------------------------------------------------> 
     <div>
         <div class="firstImg" >
             <div>
@@ -737,8 +439,6 @@
                 </div>
             </div>
         </div>
-            <!-- Modal submit -->
-            
 
         <div>
             <h1 class="text-center h1" >Connect With Us</h1>
@@ -761,16 +461,158 @@
                 </a>
             </div>
         </div>
+    </div>
+    <!-- bushra part ends here -------------------------------------------------------------------------------------------------->
 
+    <!-- <---------------------------------------shahbaj part begins here---------------------------------------------------------------------> 
+    <h1 style="text-align: center;">Buying Jewellery on Tanishq Got Easier</h1>
+    <div id="Tanishq">
+        <div id="Tanishq_box1">
+            <img style="width: 420px; height: 300px;" src="https://staticimg.titan.co.in/Tanishq/Banners/home/buyingJewellery/FindYourRingSize360x360.jpg" alt="ring">
+        </div>
+        <div id="Tanishq_box2">
+            <img  style="width: 420px; height: 300px;" src="https://staticimg.titan.co.in/Tanishq/Banners/home/buyingJewellery/HeartfeltTestimonials360x360.jpg" alt="earing">
+        </div>
+        <div id="Tanishq_box3">
+            <img style="width: 420px; height: 300px;" src="https://staticimg.titan.co.in/Tanishq/Banners/home/buyingJewellery/TheJewelleryCareGuide360x360.jpg" alt="Jewellery">
+        </div>
     </div>
 
+    <h2>Customer Reviews </h2> 
+    
+    <div id="customer">
+        <div id="customer1">
+            <i style="margin-left: 24%; margin-top: 10px; color: black;" class="fa-solid fa-quote-left fa-3x"></i>
+            <div id="box1">
+                <img style="width: 80px; height: 20px;" src="star.png" alt="">
+                <p style="margin-left: 30%;margin-top: -7%; color: black; font-size: 15px;">02/14/22</p>
+                <h4 style="margin-top: -5%;">Shipping was excellent. The service</h4>
+                <h3 style=" font-size: 10px; margin-top: -7%;">Shipping was excellent. The service provided by customer care was awesome</h3>
+                <h5 style="font-size: 10px; margin-top: -2%;">ABHIRUPA</h5>
+            </div>
+            <div id="customer2">
+                <i style="margin-left: 24%; margin-top: 10px; color: black;"class="fa-solid fa-quote-left fa-3x"></i>
+                <div id="box2">
+                    <img style="width: 80px; height: 20px;" src="star.png" alt="">
+                    <p style="margin-left: 30%;margin-top: -7%;color: black; font-size: 15px;">02/01/22</p>
+                    <h4 style="margin-top: -5%;">It’s was delivered safely one</h4>
+                    <h3 style=" font-size: 10px; margin-top: -7%;">It’s was delivered safely one day prior to the schedule delivery day. I liked the overall experience with tanishq.</h3>
+                    <h5 style="font-size: 10px; margin-top: -2%;">Deeksha S.</h5>
+                </div>
+                <div id="customer2">
+                    <i style="margin-left: 24%; margin-top: 10px;color: black;" class="fa-solid fa-quote-left fa-3x"></i>
+                    <div id="box2">
+                        <img style="width: 80px; height: 20px;" src="star.png" alt="">
+                        <p style="margin-left: 30%;margin-top: -7%; color: black; font-size: 15px;">01/26/22</p>
+                        <h4 style="margin-top: -5%;">Received product within 4 days.</h4>
+                        <h3 style=" font-size: 10px; margin-top: -7%;">Received product within 4 days. It was very convenient and 100% safe.</h3>
+                        <h5 style="font-size: 10px; margin-top: -2%;">Ruchi B.</h5>
+                    </div>
+                    <div id="customer3">
+                        <i style="margin-left: 24%; margin-top: 10px;color: black;" class="fa-solid fa-quote-left fa-3x"></i>
+                        <div id="box2">
+                            <img style="width: 80px; height: 20px;" src="star.png" alt="">
+                            <p style="margin-left: 30%;margin-top:-7%;color: black; font-size: 15px;">01/26/22</p>
+                            <h4 style="margin-top: -5%;">Tanishq is my first choice</h4>
+                            <h3 style=" font-size: 10px; margin-top: -7%;">Tanishq is my first choice for any jewellery purchase and will be that way in future too. Even I bought SafeGold (eGold) from Tani...
+                                <a href="">Read More</a></h3>
+                            <h5 style="font-size: 10px; margin-top: -2%;">JAYDEEP B.</h5>
+                        </div>
+                    </div>
+                    <div id="customer4">
+                        <i style="margin-left: 24%; margin-top: 10px;color: black;" class="fa-solid fa-quote-left fa-3x"></i>
+                        <div id="box2">
+                            <img style="width: 80px; height: 20px;" src="star.png" alt="">
+                            <p style="margin-left: 30%;margin-top: -7%;color: black; font-size: 15px;">01/20/22</p>
+                            <h4 style="margin-top: -5%;">Excellent website, so easy to</h4>
+                            <h3 style=" font-size: 10px; margin-top: -7%;">xcellent website, so easy to buy best Indian jewelries online from international countries.
+
+                                Wish not so many great desig...
+                                <a href="">Read More</a></h3>
+                            <h5 style="font-size: 10px; margin-top: -2%;">Susmita G.</h5>
+                        </div>
+                        <div id="customer5">
+                            <i style="margin-left: 24%; margin-top: 10px;color: black;" class="fa-solid fa-quote-left fa-3x"></i>
+                            <div id="box2">
+                                <img style="width: 80px; height: 20px;" src="star.png" alt="">
+                                <p style="margin-left: 30%;margin-top: -7%;color: black; font-size: 15px;">01/11/22</p>
+                                <h4 style="margin-top: -5%;">Good online service. All the</h4>
+                                <h3 style=" font-size: 10px; margin-top: -7%;">Good online service. All the online process was smooth. I will highly recommend it to others. thank you</h3>
+                                <h5 style="font-size: 10px; margin-top: -2%;">Pooja B.</h5>
+                            </div>
+                            <div id="customer3">
+                                <i style="margin-left: 24%; margin-top: 10px; color: black;" class="fa-solid fa-quote-left fa-3x"></i>
+                                <div id="box2">
+                                    <img style="width: 80px; height: 20px;" src="star.png" alt="">
+                                    <p style="margin-left: 30%;margin-top: -7%;color: black; font-size: 15px;">01/11/22</p>
+                                    <h4 style="margin-top: -5%;">Great Service, received timely prompt</h4>
+                                    <h3 style=" font-size: 10px; margin-top: -7%; ">Great Service, received timely prompt updates about shipping, packaging was clean and neat ..</h3>
+                                    <h5 style="font-size: 10px; margin-top: -2%;">Supriya K.</h5>
+                                </div>
+                            </div>
+                            <div id="customer4">
+                                <i style="margin-left: 24%; margin-top: 10px;color: black;" class="fa-solid fa-quote-left fa-3x"></i>
+                                <div id="box2">
+                                    <img style="width: 80px; height: 20px;" src="star.png" alt="">
+                                    <p style="margin-left: 30%;margin-top: -7%;color: black; font-size: 15px;">01/08/22</p>
+                                    <h4 style="margin-top: -5%;">They provide safe and reliable</h4>
+                                    <h3 style=" font-size: 10px; margin-top: -7%;">They provide safe and reliable shipping and very reliable brand, love Tata/Titan products!!</h3>
+                                    <h5 style="font-size: 10px; margin-top: -2%;">Nandita S.</h5>
+                                </div>
+                                <div id="customer5">
+                                    <i style="margin-left: 24%; margin-top: 10px; color: black;" class="fa-solid fa-quote-left fa-3x"></i>
+                                    <div id="box2">
+                                        <img style="width: 80px; height: 20px;" src="star.png" alt="">
+                                        <p style="margin-left: 30%;margin-top: -7%;color: black; font-size: 15px;">03/15/22</p>
+                                        <h4 style="margin-top: -5%;">Awesome & stellar</h4>
+                                        <h3 style=" font-size: 10px; margin-top: -7%;">Great product & awesome delivery experience. You guys made it even more special. Thank you 😊</h3>
+                                        <h5 style="font-size: 10px; margin-top: -2%;">Shafi A.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span style="margin-left: 95%;">Poweredby</span>
+    <div id="ORIGINAL">
+       <div id="Box1">
+           <h2 style="text-align: center;font-size: 15px;">100% ORIGINAL</h2>
+           <h2 style="text-align: center;font-size: 15px;">All products are original and go through strict quality check.</h2>
+       </div>
+       <div>
+           <h2 style="text-align: center;font-size: 15px;">A TATA PRODUCT</h2>
+           <h2 style="text-align: center;font-size: 15px;">The Tata seal of Trust comes with all our products</h2>
+       </div>
+       <div>
+          <h2 style="text-align: center;font-size: 15px;">SHIPPING</h2>
+           <h2 style="text-align: center;font-size: 15px;">Shipping in India is free. Shipping charges applicable for International locations.</h2>
+       </div>
+    </div>
+    <div id="Footer"></div>
+    <!-- shahbaj part ends here ---------------------------------------------------------------------->
 
 </body>
-
 </html>
+<script type="module">
 
-<script>
+    // gajraj part ends here ----------------------------------------------------------------------
+    
+    import { navbar } from "./components/navbar.js"
+    let navigation_bar = document.getElementById("navigation_bar");
+    navigation_bar.innerHTML=navbar()
 
+
+
+    // shahbaj alam
+    import {footer} from "./components/footer.js"
+
+    let Footer = document.getElementById("Footer")
+    Footer.innerHTML=footer()
+
+    // bushra part js
     var item = 1
     document.querySelector("#prevbtn").addEventListener('click', prev)
     document.querySelector("#nextbtn").addEventListener('click', next)
@@ -807,7 +649,6 @@
     }
     runslider()
     setInterval(next, 8000);
-
 
 
 </script>

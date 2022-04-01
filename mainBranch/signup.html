@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"href=  "http://www.dividapps.com/img/ilq/images/q510.jpg">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles\login.css">
+    <style>
+        #container{
+            font-family: "Playfair Display",sans-serif;
+        }
+        .main{
+            box-sizing: border-box;
+        }
+      .inputt{
+          width: 95%;
+          height: 30px;
+          text-align: center;
+          margin-top: 15px;
+      }
+    
+      fieldset{
+          height: 600px;
+          width:40%;
+      }
+      .flag{
+          width: 5%;
+      }
+      .phon{
+          display: flex;
+          width: 100%;
+          height: 30px;
+          padding: 10px;
+          justify-content: center;
+          align-items: center;
+          margin: 20px 0px 0px 0px;
+          font-size: 16px;
+      }
+      .phon > input{
+          width: 60%;
+          margin:0px 0px 0px 5px;
+      }
+      img{
+          width: 20%;
+      }
+    
+      .otp_div{
+          margin-top: 40px;
+      }
+     .box{
+         display: flex;
+         align-items: center;
+         height: 30px;
+         font-size: 12px;
+         margin-top: 10px;
+         
+     }
+     button{
+    width: 100%;
+    height: 60px;
+}
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div class="logo">
+            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/4417c959-3482-4f71-942a-a12e015997b6/tanishq.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-4417c959-3482-4f71-942a-a12e015997b6-nv8w2CB" alt="">
+
+        </div>
+
+        <div class="main">
+            
+            <fieldset class="sgin_div">
+                <legend>SIGN UP</legend>
+
+                <form id="login" class="form">    
+                        <input class="inputt F_name" type="text" placeholder="FIRST NAME">
+                        <input class="inputt L_name" type="text" placeholder="LAST NAME">
+                        
+                    
+                        <div class="phon">
+                            <img class="flag" src="data:image/png;base64,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">
+                            <h4>+91</h4>
+                            <input class="inputt mbl"  type="number" placeholder="PHONE NUMBER">
+                        </div>
+
+                        <input class="inputt email" type="email" placeholder="E-MAIL">
+                        <input class="inputt pass" type="password" placeholder="PASSWORD">
+                        
+                            <div class="box">
+                                <input type="checkbox">
+                                <p>Receive our newsletters and special offers.</p>
+                            </div>
+
+                            <div class="box">
+                                <input type="checkbox">
+                                <p>Get updates on  WhatsApp</p>
+                            </div>
+
+                            <div class="box">
+                                <input type="checkbox">
+                                <p>I agree to the Terms & Conditions  and Privacy Policy.</p>
+                            </div>
+                    
+                        <button type="submit" class="otp_div">REGISTER</button>
+                 </form> 
+    
+            </fieldset>
+    
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+document.getElementById("login").addEventListener("submit", formSubmit);
+        var userStack=JSON.parse(localStorage.getItem("userDataBase"))||[];
+        function formSubmit(event){
+          event.preventDefault();
+
+          var F_name = document.querySelector(".F_name").value 
+          var L_name = document.querySelector(".L_name").value 
+          var mbl = document.querySelector(".mbl").value 
+          var email = document.querySelector(".email").value 
+          var pass = document.querySelector(".pass").value 
+
+          var flag=true;
+          if(F_name == []){
+              alert("Please fill firstname")
+              flag=false;
+          }
+
+          else if(L_name == []){
+              alert("Please fill lastname")
+              flag=false;
+          }
+
+          else if(mbl == [] || mbl.length >10 || mbl.length < 10){
+              alert("Invalid mobile number")
+              flag=flase;
+          }
+          else if(email == []){
+              alert("please enter your email")
+              flag=flase;
+          }
+          else if(pass == []){
+              alert("please enter your password")
+              flag=flase;
+          }
+
+          else if(flag == true){
+     
+          var userData = {
+              F_name,
+              L_name,
+              mbl,
+              email,
+              pass,
+          };
+
+          console.log(userData)
+
+          userStack.push(userData);
+
+          localStorage.setItem("userDataBase", JSON.stringify(userStack))
+          window.location.href="login.html"
+          alert("Sign-up succsessfully...")  
+
+        }   
+
+    }
+
+
+</script>
