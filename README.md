@@ -49,7 +49,7 @@
 - CSS
 - JavaScript (ES6)
 
-# Cloner's
+# Team
 
 - [@Suraj Kumar Gupta](https://github.com/Surajbnp)
 - [@Gajraj Singh Shekhawat](https://www.github.com/octokatherine)
