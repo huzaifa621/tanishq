@@ -329,7 +329,10 @@ const display = (products)=>{
 //  console.log(btn)
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
  btn.addEventListener("click",function(){
+     let a = document.getElementById("cart1")
      cart.push(products)
+     a.innerText = "CART("+ cart.length+ ")"; 
+
     console.log(cart)
     localStorage.setItem("cart",JSON.stringify(cart))
 

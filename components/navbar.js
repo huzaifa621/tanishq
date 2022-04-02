@@ -13,7 +13,7 @@ let navbar = () => {
                 <a href="#">GOLDEN HARVEST</a>
                 <a href="#">BOOK AN APPOINTMENT</a>
                 <a href="cart.html">WISHLIST</a>
-                <a href="cart.html">CART</a>
+                <a id = "cart1" href="cart.html">CART</a>
             </div>
         </div>
 

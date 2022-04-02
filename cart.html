@@ -82,6 +82,11 @@
     let N = document.getElementById("navbar");
     N.innerHTML = navbar();
 
+    let database = JSON.parse(localStorage.getItem("cart")) || [];
+     let ac = document.getElementById("cart1")
+    //  cart.push(products)
+    ac.innerText = `CART(${database.length})`
+    console.log(ac)
 
     import {footer} from './components/footer.js';
     let F = document.getElementById("footer");
@@ -103,7 +108,7 @@
     //  weight: "Weight (g): 4.692",
     //  size: "Ring Size : 17.20 mm"} ];
 
-     let database = JSON.parse(localStorage.getItem("cart")) || [];
+     database = JSON.parse(localStorage.getItem("cart")) || [];
 
      let word = document.querySelector(".word");
      word.innerText = `CART : ${database.length} ITEMS`;
