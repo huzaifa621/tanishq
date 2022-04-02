@@ -43,7 +43,7 @@
 
 
 
-# Programming Languages
+# Tech Stack used
 
 - HTML
 - CSS
