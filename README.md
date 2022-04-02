@@ -20,7 +20,7 @@
 
 ![App Screenshot](https://user-images.githubusercontent.com/97525279/161365802-b69ae90f-361a-4aa4-a987-a924576d2d7b.png)
 
-## Product description page
+## Product details page
 
 ![App Screenshot](https://user-images.githubusercontent.com/97525279/161365804-fdf44a41-8e3e-4657-a230-599c3953040a.png)
 
@@ -30,8 +30,7 @@
 ![App Screenshot](https://user-images.githubusercontent.com/97525279/161365806-24a54a79-551f-4d85-9395-8281c102d0fb.png)
 
 
-
-## Cheakout page
+## Payment page
 
 ![App Screenshot](https://user-images.githubusercontent.com/97525279/161365807-4b544eb7-a9a6-44b0-9f52-b6a349a49e68.png)
 
