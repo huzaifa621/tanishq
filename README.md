@@ -50,7 +50,7 @@
 - CSS
 - JavaScript (ES6)
 
-# Cloners
+# Cloner's
 
 - [@Suraj Kumar Gupta](https://github.com/Surajbnp)
 - [@Gajraj Singh Shekhawat](https://www.github.com/octokatherine)
