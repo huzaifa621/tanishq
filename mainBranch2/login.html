@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img\tanishq_logo_browser_top.png">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles\login.css">
+
+<body>
+    <div id="container">
+        <div class="logo">
+            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/4417c959-3482-4f71-942a-a12e015997b6/tanishq.svg?MOD=AJPERES&ampCACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-4417c959-3482-4f71-942a-a12e015997b6-nv8w2CB" alt="">
+
+        </div>
+
+        <div class="main">
+            <div>
+                <fieldset id="tag">
+                    <legend>LOGIN WITH PASSWORD</legend>
+                        <h6>LOGIN USING NUMBER & OTP</h6>
+                    <form>
+
+                        <input type="email" id="user" placeholder="ENTER E-MAIL">
+                        <input type="password" id="pass" placeholder="ENTER PASSWORD">
+                        <button type="submit" id="login" >Login</button>
+
+                     </form>
+                </fieldset>
+
+            </div>
+            <div style="width: 0.01em;background-color: black;"></div>
+            <div>
+                <img class="signup" src="img\s.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+   let sign = document.querySelector(".signup")
+   sign.addEventListener("click", function(){
+       window.location.href="signup.html";
+   })
+
+
+document.querySelector("form").addEventListener("submit", login);
+
+var regdUsers = JSON.parse(localStorage.getItem("userDataBase"));
+
+function login(event){ 
+event.preventDefault();
+var user = document.querySelector("#user").value
+var pass = document.querySelector("#pass").value
+
+
+for(var i=0; i<regdUsers.length; i++)
+{
+
+    var flag=false;  
+    if(user == []){
+    alert("Please fill username")
+    flag=true;
+    break;
+   }
+    else if(pass == []){
+    alert("Please fill password")
+    flag=true;
+    break;
+   }
+    else  if(regdUsers[i].email == user && regdUsers[i].pass == pass)
+      {
+        window.location.href="index.html"
+        flag=true;
+        alert("login successfully")
+        localStorage.setItem("flag_val","true");
+        break;
+      }
+ 
+}
+if(flag==false){
+    alert("Invaild Username or Password")
+  
+  }
+
+}
+</script>
