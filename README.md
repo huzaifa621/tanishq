@@ -1,7 +1,7 @@
 
 # Tanishq Clone
 
-- We were a team of 6 from the Masai Web-16 batch who worked on cloning the Tanishq website as part of our Unit-3 construct week. As a team, we were given a project to clone the Tanishq website. Our project demonstrates a basic flow of an e-commerce page, where a customer can view and filter products, add their product to a cart and place his or her happy order.
+- We are a team of 6 from the Masai Web-16 batch who worked on cloning the Tanishq website as part of our Unit-3 construct week. As a team, we were given a project to clone the Tanishq website. Our project demonstrates a basic flow of an e-commerce page, where a customer can view and filter products, add their product to a cart and place his or her happy order.
 -  Tanishq has emerged as India's fastest growing jewellery brand and is a name which signifies superior craftsmanship, exclusive designs and superlative product quality. The term Tanishq was coined by Mr. Xerxes Desai by merging the words 'Tan' meaning body and 'Nishk' meaning a gold ornament.
 ## 🔗Deploy Link
 (https://gorgeous-elf-ceb4ab.netlify.app/)
