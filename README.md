@@ -59,3 +59,5 @@
 - [@Md Huzaifa Sheikh](https://github.com/huzaifa621)
 - [@K Bushra Jabeen](https://github.com/bushrajabeenk)
 
+- Blog link
+https://medium.com/@bushrajabeen/although-with-each-passing-unit-we-learn-new-things-and-level-up-but-this-unit-was-just-too-mind-b06972574afe
